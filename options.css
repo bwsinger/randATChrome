@@ -1,0 +1,26 @@
+body {
+  padding-top: 5rem;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+#slider1cs {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#slider1cs .slider-track-low,
+#slider1cs .slider-track-high {
+  background: grey;
+}
+
+#slider1cs .slider-selection {
+  background: pink;
+}
+
+#slider1cs .slider-handle {
+  background: red;
+}

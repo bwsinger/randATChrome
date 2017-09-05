@@ -17,12 +17,12 @@
   },
   "author": "Bradley Singer",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js", "options.js"],
     "persistent": false
   },
-  //"options_page": "options.html",
+  "options_page": "options.html",
   "permissions": [
       "activeTab",
-      "tabs"
+      "storage"
   ]
 }
