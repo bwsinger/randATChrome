@@ -1,8 +1,0 @@
-{
-  "bb.beautify.onSave": true,
-  "path": {
-    "background.js": {
-      "bb.beautify.onSave": false
-    }
-  }
-}

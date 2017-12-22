@@ -1,28 +1,28 @@
 {
-  "name": "randAT",
-  "version": "1.0.0",
-  "manifest_version": 2,
-  "description": "Opens a random Adventure Time episode. No longer will you have to choose.",
-  "icons": {
-    "128": "images/icon128.png",
-    "48": "images/icon48.png",
-    "16": "images/icon16.png"
-  },
-  "browser_action": {
-    "default_icon": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png"
+    "name": "randAT",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Opens a random Adventure Time episode. No longer will you have to choose.",
+    "icons": {
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"
     },
-    "default_title": "randAT"
-  },
-  "author": "Bradley Singer",
-  "background": {
-    "scripts": ["background.js", "options.js"],
-    "persistent": false
-  },
-  "options_page": "options.html",
-  "permissions": [
-      "activeTab",
-      "storage"
-  ]
+    "browser_action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png"
+        },
+        "default_title": "randAT"
+    },
+    "author": "Bradley Singer",
+    "background": {
+        "scripts": ["background.js", "options.js"],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
 }
