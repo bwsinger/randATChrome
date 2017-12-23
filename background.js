@@ -11,6 +11,16 @@ const episode_dic = {
     '9': ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'],
     '10': ['1', '2', '3', '4', '5', '6', '7', '8']
 };
+const SEASON_MIN = 1;
+const SEASON_MAX = Object.keys(episode_dic).length;
+
+function getSeasonMin() {
+    return SEASON_MIN;
+}
+
+function getSeasonMax() {
+    return SEASON_MAX;
+}
 
 function typeOf(obj) {
     return {}.toString.call(obj).split(' ')[1].slice(0, -1).toLowerCase();
@@ -29,8 +39,8 @@ chrome.browserAction.onClicked.addListener(function (activeTab) {
             max = 0;
         // If the settings haven't been adjusted (no stored variable)
         if (sRange.minSeason == null) {
-            min = 1;
-            max = Object.keys(episode_dic).length;
+            min = SEASON_MIN;
+            max = SEASON_MAX;
         } else {
             min = sRange.minSeason;
             max = sRange.maxSeason;
@@ -42,6 +52,7 @@ chrome.browserAction.onClicked.addListener(function (activeTab) {
         // console.log(season, episode);
 
         var newURL = baseURL + season + '-episode-' + episode;
+
         chrome.tabs.create({
             url: newURL
         }); // tab create

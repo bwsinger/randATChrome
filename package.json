@@ -1,0 +1,28 @@
+{
+  "name": "randatchrome",
+  "version": "1.0.0",
+  "description": "Chrome extension for randomly playing Adventure Time episodes.",
+  "main": "background.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwsinger/randATChrome.git"
+  },
+  "author": "Bradley Singer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bwsinger/randATChrome/issues"
+  },
+  "homepage": "https://github.com/bwsinger/randATChrome#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap-slider": "^10.0.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
+  }
+}
