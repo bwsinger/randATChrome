@@ -7,6 +7,7 @@ A Chrome extension that opens a random Adventure Time episode. No longer will yo
 For now, this extension is not on the Google Chrome Extension store. However, you can use it for free by installing it locally by following these steps:
 
 1. Download this repository either by cloning it or clicking the 'Clone or download' button at the top of this page and clicking 'Download Zip'.
+1. In a terminal, navigate to the 'randATChrome' directory and run `npm install`
 1. Open a Chrome Browser page and type in the URL `chrome://extensions/`
 1. Click the button 'Load unpacked extension'
 1. Navigate to the place you saved the repo, select the whole 'randATChrome' folder, and click 'Ok'.
